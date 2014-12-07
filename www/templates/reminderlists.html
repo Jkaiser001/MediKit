@@ -1,0 +1,37 @@
+<ion-view title="Recordatorios" >
+  <ion-nav-buttons side="left">
+    <button menu-toggle="left" class="button button-icon icon ion-navicon"></button>
+    <label   class="toggle toggle-assertive" ng-model="shouldShowDelete">
+       <input type="checkbox" ng-model="shouldShowDelete">
+       <div class="track">
+         <div class="handle"></div>
+       </div>
+     </label>
+  </ion-nav-buttons>
+  <ion-nav-buttons side="right">
+    <button class="button button-icon icon ion-plus-round" ng-click="openModal()"></button>
+    
+  </ion-nav-buttons>
+  <ion-content class="has-header">
+   
+   <!-- <ion-toggle ng-model="shouldShowDelete">
+        Editar
+    </ion-toggle>-->
+    <ion-list show-delete="shouldShowDelete" can-swipe="listCanSwipe">
+      
+        
+      <ion-item  ng-repeat="reminder in reminderlists" href="#/app/reminderlists/{{reminder.id}}">
+        <ion-delete-button class="ion-minus-circled" ng-click="onItemDelete(reminder)">>
+      </ion-delete-button>
+        <div style="padding: 10px; float: left; width: 45%; text-align: justify;">        
+          <h2>{{reminder.title}}</h2>
+          <p>{{reminder.dose}}</p>
+        </div>
+        <div style="padding: 10px; float: right; width: 45%; text-align: justify;">
+          <h1>{{reminder.time}}</h1>
+        </div>
+      </ion-item>
+    </ion-list>
+   
+  </ion-content>
+</ion-view>

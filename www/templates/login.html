@@ -1,0 +1,36 @@
+
+<div class="modal">
+  <ion-header-bar class="bar-assertive">
+    <h1 class="title">Login</h1>
+    <div class="buttons">
+      <button class="button button-clear" ng-click="closeLogin()">Close</button>
+    </div>
+  </ion-header-bar>
+  
+  <ion-content>
+     <div style="width: 50%; margin-left: 16% ; margin-right: auto ">
+     <center> <IMG SRC="img/MEDIKITLOGO.png" WIDTH=120% HEIGHT=125%></center> 
+    </div> 
+    
+      <form ng-submit="doLogin()">
+      <div class="list">
+        <label class="item item-input">
+          <span class="input-label">Username</span>
+          <input type="text" ng-model="loginData.username">
+        </label>
+        <label class="item item-input">
+          <span class="input-label">Password</span>
+          <input type="password" ng-model="loginData.password">
+        </label>
+        <div style="width: 120px; margin-left: auto ; margin-right: auto ">
+        
+        <button style="margin-top:10%"class="button button-large button-assertive" type="submit">Log in</button>
+  
+        </div>
+                
+    </form>
+   </div> 
+    
+  </ion-content>
+</div>
+

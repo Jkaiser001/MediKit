@@ -1,0 +1,25 @@
+/Users/joseorellana/Documents/prototipo/MediKit copia/platforms/android/ant-build/classes.dex : \
+/Users/joseorellana/Documents/prototipo/MediKit copia/platforms/android/ant-build/classes/com/ionic/keyboard/IonicKeyboard$1.class \
+/Users/joseorellana/Documents/prototipo/MediKit copia/platforms/android/ant-build/classes/com/ionic/keyboard/IonicKeyboard$2.class \
+/Users/joseorellana/Documents/prototipo/MediKit copia/platforms/android/ant-build/classes/com/ionic/keyboard/IonicKeyboard$3.class \
+/Users/joseorellana/Documents/prototipo/MediKit copia/platforms/android/ant-build/classes/com/ionic/keyboard/IonicKeyboard.class \
+/Users/joseorellana/Documents/prototipo/MediKit copia/platforms/android/ant-build/classes/com/ionicframework/medikit946309/BuildConfig.class \
+/Users/joseorellana/Documents/prototipo/MediKit copia/platforms/android/ant-build/classes/com/ionicframework/medikit946309/CordovaApp.class \
+/Users/joseorellana/Documents/prototipo/MediKit copia/platforms/android/ant-build/classes/com/ionicframework/medikit946309/R$attr.class \
+/Users/joseorellana/Documents/prototipo/MediKit copia/platforms/android/ant-build/classes/com/ionicframework/medikit946309/R$drawable.class \
+/Users/joseorellana/Documents/prototipo/MediKit copia/platforms/android/ant-build/classes/com/ionicframework/medikit946309/R$string.class \
+/Users/joseorellana/Documents/prototipo/MediKit copia/platforms/android/ant-build/classes/com/ionicframework/medikit946309/R$xml.class \
+/Users/joseorellana/Documents/prototipo/MediKit copia/platforms/android/ant-build/classes/com/ionicframework/medikit946309/R.class \
+/Users/joseorellana/Documents/prototipo/MediKit copia/platforms/android/ant-build/classes/de/appplant/cordova/plugin/localnotification/LocalNotification$1.class \
+/Users/joseorellana/Documents/prototipo/MediKit copia/platforms/android/ant-build/classes/de/appplant/cordova/plugin/localnotification/LocalNotification$2.class \
+/Users/joseorellana/Documents/prototipo/MediKit copia/platforms/android/ant-build/classes/de/appplant/cordova/plugin/localnotification/LocalNotification$3.class \
+/Users/joseorellana/Documents/prototipo/MediKit copia/platforms/android/ant-build/classes/de/appplant/cordova/plugin/localnotification/LocalNotification$4.class \
+/Users/joseorellana/Documents/prototipo/MediKit copia/platforms/android/ant-build/classes/de/appplant/cordova/plugin/localnotification/LocalNotification$5.class \
+/Users/joseorellana/Documents/prototipo/MediKit copia/platforms/android/ant-build/classes/de/appplant/cordova/plugin/localnotification/LocalNotification.class \
+/Users/joseorellana/Documents/prototipo/MediKit copia/platforms/android/ant-build/classes/de/appplant/cordova/plugin/localnotification/Options.class \
+/Users/joseorellana/Documents/prototipo/MediKit copia/platforms/android/ant-build/classes/de/appplant/cordova/plugin/localnotification/Receiver.class \
+/Users/joseorellana/Documents/prototipo/MediKit copia/platforms/android/ant-build/classes/de/appplant/cordova/plugin/localnotification/ReceiverActivity.class \
+/Users/joseorellana/Documents/prototipo/MediKit copia/platforms/android/ant-build/classes/de/appplant/cordova/plugin/localnotification/Restore.class \
+/Users/joseorellana/Documents/prototipo/MediKit copia/platforms/android/ant-build/classes/org/apache/cordova/device/Device.class \
+/Users/joseorellana/Documents/prototipo/MediKit copia/platforms/android/ant-build/classes/org/apache/cordova/splashscreen/SplashScreen.class \
+/Users/joseorellana/Documents/prototipo/MediKit copia/platforms/android/ant-build/dexedLibs/classes-30cc79e1072f5c0d4c3020dd80a2613a.jar \

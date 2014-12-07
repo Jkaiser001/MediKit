@@ -1,0 +1,33 @@
+<div class="modal">
+  <ion-header-bar class="bar-assertive">
+    <button class="button button-icon icon ion-chevron-left" ng-click='closeModal()'>Back</button>
+    
+    <h1 class="title">Agregar Recordatorio</h1>
+   <button class="button button-icon icon ion-checkmark-round" ng-click='aceptar("2",smedicine,4)'></button>
+  </ion-header-bar>
+  <ion-content>
+  <div class="list">
+    <label class="item item-input item-stacked-label item-select">
+    <span class="input-label">Medicamento</span>
+    <select id = "smedicine">
+      <option ng-repeat="medicine in medicinelist">{{medicine.title}}</option>
+    </select>
+
+  </label>  
+    <div class="item range range-positive">
+      <label> Dosis</label> 
+      <input type="range" name="volume" min="1" max="6" step='0.5' ng-model='data.dose'>
+      
+      {{data.dose}}
+
+    </div>
+    <div class="item range range-positive">
+      <label> Dosis</label> 
+      <output name="a">
+      
+
+    </div>
+
+    </div> 
+  </ion-content>
+</div>
