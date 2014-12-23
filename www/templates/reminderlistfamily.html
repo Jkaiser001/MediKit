@@ -1,0 +1,21 @@
+<ion-view title="Recordatorios de {{familiar.nick}}" >
+  <ion-content class="has-header">
+   
+   <!-- <ion-toggle ng-model="shouldShowDelete">
+        Editar
+    </ion-toggle>-->
+    <ion-list show-delete="shouldShowDelete" can-swipe="listCanSwipe">
+
+      <ion-item  ng-repeat="reminder in familiar.Medicamentos" href="#/app/reminderlists/{{reminder.id}}">
+        <div style="padding: 10px; float: left; width: 45%; text-align: justify;">        
+          <h2>{{reminder.title}}</h2>
+          <p>{{reminder.dose}}</p>
+        </div>
+        <div style="padding: 10px; float: right; width: 45%; text-align: justify;">
+         <h2>Dosis disponibles: {{reminder.total}} </h2>
+        </div>
+      </ion-item>
+    </ion-list>
+   
+  </ion-content>
+</ion-view>

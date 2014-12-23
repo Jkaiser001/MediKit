@@ -3,31 +3,80 @@
     <button class="button button-icon icon ion-chevron-left" ng-click='closeModal()'>Back</button>
     
     <h1 class="title">Agregar Recordatorio</h1>
-   <button class="button button-icon icon ion-checkmark-round" ng-click='aceptar("2",smedicine,4)'></button>
+   <button class="button button-icon icon ion-checkmark-round" ng-click='aceptar("2",smedicine)'></button>
   </ion-header-bar>
   <ion-content>
   <div class="list">
+      <label class="item item-input item-stacked-label item-select">
+      <H1><span class="input-label">Medicamento</span></H1>
+      <select id = "smedicine">
+        <option ng-repeat="medicine in medicinelist">{{medicine.title}}</option>
+      </select>
+
+    </label>  
     <label class="item item-input item-stacked-label item-select">
-    <span class="input-label">Medicamento</span>
-    <select id = "smedicine">
-      <option ng-repeat="medicine in medicinelist">{{medicine.title}}</option>
-    </select>
-
-  </label>  
-    <div class="item range range-positive">
-      <label> Dosis</label> 
-      <input type="range" name="volume" min="1" max="6" step='0.5' ng-model='data.dose'>
-      
-      {{data.dose}}
+      <H1><span class="input-label">Presentación</span></H1>
+      <h2><select id = "pre" ng-model="presentacion1" ng-options="progra.names for progra in presentaciones">
+      </select></h2>
+    </label>  
+      <div class="item range range-positive">
+        <div style="width: 15%; text-align: justify;">        
+         <H1><span class="input-label">Dosis:</span> </H1>
+        </div>
+        <div style="padding: 10px;  width: 70%; text-align: justify;" ng-show="presentacion1.names!='Miligramos'">  
+          <input type="range" style="width: 90%"name="volume" min="1" max="6" step='0.5' ng-model='data.dose'>
+        </div>
+        <div style="padding: 10px;  width: 55%; text-align: justify;" ng-show="presentacion1.names=='Miligramos'">  
+          <input style="width: 100%" type="number"  min="25" max="1000" step="25"  value="50"> 
+        </div>
+          <div style="padding: 10px; width:  10%; text-align: justify;" ng-show="presentacion1.names!='Miligramos'">
+             {{data.dose}}
+          </div>
+          <div style="padding: 10px; width:  10%; text-align: justify;" ng-show="presentacion1.names=='Miligramos'">
+             {{presentacion1.name}}
+          </div>
+      </div>  
+      <label class="item item-input item-stacked-label item-select">
+          <h1><span class="input-label"> Programación por: </span></h1>
+          <select id = "Progra" ng-model="progasel" ng-options="progra.name for progra in programacion">
+          </select>
+        </label>
+        <div class="item range" ng-show="progasel.name=='Intervalo de Tiempo'">
+        <div style="  width: 20%; text-align: justify;">        
+            <H1><span class="input-label">Cada:</span> </H1>
+        </div>
+        <div style="width: 58%; text-align: justify;">  
+          <input id="tiempohrs" style="width: 100%" type="number"  min="1" step="1"  value="1" > 
+        </div>
+          <div style="padding: 10px; width:  10%; text-align: justify;">
+             hrs
+          </div>
+      </div>
+    <div class="item range" ng-show="progasel.name=='Dosis por Dias'">
+        <div  id= "Idosis"style="  width: 15%; text-align: justify;">        
+            <H1><span class="input-label">Dosis:</span> </H1>
+        </div>
+        <div style="padding: 10px;  width: 59%; text-align: justify;">  
+          <input id=""style="width: 100%" type="number"  min="1" step="1"  value="1" > 
+        </div>
+          <div style="padding: 10px; width:  20%; text-align: justify;">
+             al día
+          </div>
+      </div>
+          <div class="item range">
+        <div style="  width: 30%; text-align: justify;">        
+            <H1><span class="input-label">Dosis Totales:</span> </H1>
+        </div>
+        <div style="padding: 10px;  width: 40%; text-align: justify;">  
+          <input id= "ntotal" style="width: 100%" type="number"  min="2" step="1"  value="2" > 
+        </div>
+          <div style="padding: 10px; width:  20%; text-align: justify;">
+             {{presentacion1.namep}}
+          </div>
 
     </div>
-    <div class="item range range-positive">
-      <label> Dosis</label> 
-      <output name="a">
-      
-
-    </div>
-
-    </div> 
+    
+    
+      </label> 
   </ion-content>
 </div>

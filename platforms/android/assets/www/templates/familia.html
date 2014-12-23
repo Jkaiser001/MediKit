@@ -3,7 +3,7 @@
     <button menu-toggle="left" class="button button-icon icon ion-navicon"></button>
   </ion-nav-buttons>
   <ion-content class="has-header">
-   <ion-item whidth="70px" ng-repeat="familia in familiaList" href="#">
+   <ion-item whidth="70px" ng-repeat="familiar in familiaList" href="#/app/familia/{{familiar.id}}">
         <div>
             
         </div>
@@ -12,12 +12,12 @@
         <div style="width: 45%; text-align: justify;">        
           
         </div>
-        <div style="padding: 10px; float: left; width: 45%; text-align: justify;">        
-            <img src="img/ionic.png" width="50px"  height="50px"  >
+        <div style="padding: 10px; float: left; width: 50%; text-align: justify;">        
+            <img src="{{familiar.imagen}}">
         </div>
-        <div style="padding: 10px; float: right; width: 45%; text-align: justify;">
-          <h2>{{familia.nick}}</h2>
-          <p>{{familia.nombre}}</p>
+        <div style="padding: 10px; float: right; width: 50%; text-align: justify;">
+          <h2>{{familiar.nick}}</h2>
+          <p>{{familiar.nombre}}</p>
         </div>
 
       </ion-item>

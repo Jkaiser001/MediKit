@@ -31,7 +31,7 @@ angular.module('starter', ['ionic','starter.directives', 'starter.controllers','
     })
 
     .state('app.familia', {
-      url: "/search",
+      url: "/familia",
       views: {
         'menuContent' :{
           templateUrl: "templates/familia.html",
@@ -40,8 +40,8 @@ angular.module('starter', ['ionic','starter.directives', 'starter.controllers','
       }
     })
 
-    .state('app.browse', {
-      url: "/browse",
+    .state('app.farmacias', {
+      url: "/farmacias",
       views: {
         'menuContent' :{
           templateUrl: "templates/farmacias.html",
@@ -65,6 +65,15 @@ angular.module('starter', ['ionic','starter.directives', 'starter.controllers','
         'menuContent' :{
           templateUrl: "templates/reminder.html",
           controller: 'ReminderCtrl'
+        }
+      }
+    })
+    .state('app.familialist', {
+      url: "/familia/:familiarId",
+      views: {
+        'menuContent' :{
+          templateUrl: "templates/reminderlistfamily.html",
+          controller: 'ReminderlistfamilyCtrl'
         }
       }
     });
